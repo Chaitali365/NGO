@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Volunteer – Rise Together</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo">Rise Together</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <!-- Volunteer Section -->
+    <section class="volunteer">
+      <div class="volunteer-content">
+        <h2>Join as a Volunteer</h2>
+        <p>
+          Join <strong>Rise Together</strong> and help us serve communities through education, health, and empowerment efforts.
+        </p>
+
+        <form id="volunteerForm">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <input
+            type="text"
+            id="mobile"
+            placeholder="Your Mobile Number"
+            pattern="[0-9]{10}"
+            required
+          />
+          <textarea
+            id="interest"
+            placeholder="Areas of Interest"
+            required
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 Rise Together. All rights reserved.</p>
+      <p>Contact us: info@risetogether.org | +91 12345 67890</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

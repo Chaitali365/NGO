@@ -1,0 +1,300 @@
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar (Header) */
+.navbar {
+  background-color: #2c3e50; /* Match footer */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle bottom border */
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #f1c40f; /* Highlight on hover */
+}
+
+/* Hero Section */
+.home {
+  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #34495e;
+}
+
+.hero-content button,
+.hero-buttons button {
+  padding: 12px 25px;
+  margin: 10px;
+  font-size: 16px;
+  background-color: #f1c40f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-content button:hover,
+.hero-buttons button:hover {
+  background-color: #d4ac0d;
+}
+
+/* Stats Bar */
+.stats-bar {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.stat h3 {
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+.stat p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Call to Action Section */
+.cta {
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.cta p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.cta button {
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #f1c40f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta button:hover {
+  background-color: #d4ac0d;
+}
+
+/* Footer */
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* About Section */
+.about {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #2c3e50;
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.about h3 {
+  font-size: 24px;
+  margin-top: 30px;
+  color: #34495e;
+}
+
+.about p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.about ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.about ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Highlight Our Vision */
+.about h3 {
+  font-size: 24px;
+  margin-top: 40px;
+  color: #2c3e50;
+  border-left: 6px solid #f1c40f; /* Left border to highlight */
+  padding-left: 12px;
+}
+
+.about .vision {
+  background-color: #fdf6e3;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+  font-size: 18px;
+  color: #555;
+}
+
+/* Highlight Our Core Values */
+.about .core-values {
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-left: 4px solid #3498db;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.about .core-values ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about .core-values li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.about .core-values li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #3498db;
+  font-weight: bold;
+}
+
+/* Volunteer Section */
+.volunteer {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.volunteer-content {
+  background-color: white;
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.volunteer-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.volunteer-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+  text-align: center;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: none;
+  transition: border 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #f1c40f;
+  outline: none;
+}
+
+form button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #f1c40f;
+  border: none;
+  border-radius: 6px;
+  color: #2c3e50;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #d4ac0d;
+}
